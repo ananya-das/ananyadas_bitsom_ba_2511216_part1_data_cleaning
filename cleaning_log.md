@@ -17,6 +17,12 @@
 * Identified 18 records with missing discount values.
 * Replaced missing discounts with 0 where quantity and unit price were available.
 
+### Discount Standardization
+- Discount values were found in mixed formats including percentages (70%, 80%) and decimal values (0.10, 0.25).
+- All discounts were standardized to decimal format in the cleaned_discount column.
+- Missing discounts were replaced with 0 where applicable.
+- Negative discounts were retained and flagged as invalid records.
+
 ### Invalid Discounts
 
 * Negative discount values were flagged as invalid.
